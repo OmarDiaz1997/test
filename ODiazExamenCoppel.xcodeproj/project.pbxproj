@@ -1,0 +1,607 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EF91B01829883252001AE3CA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF91B01729883252001AE3CA /* AppDelegate.swift */; };
+		EF91B01A29883252001AE3CA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF91B01929883252001AE3CA /* SceneDelegate.swift */; };
+		EF91B01C29883252001AE3CA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF91B01B29883252001AE3CA /* ViewController.swift */; };
+		EF91B01F29883252001AE3CA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF91B01D29883252001AE3CA /* Main.storyboard */; };
+		EF91B02129883256001AE3CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF91B02029883256001AE3CA /* Assets.xcassets */; };
+		EF91B02429883256001AE3CA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF91B02229883256001AE3CA /* LaunchScreen.storyboard */; };
+		EF91B02F29883256001AE3CA /* ODiazExamenCoppelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF91B02E29883256001AE3CA /* ODiazExamenCoppelTests.swift */; };
+		EF91B03929883256001AE3CA /* ODiazExamenCoppelUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF91B03829883256001AE3CA /* ODiazExamenCoppelUITests.swift */; };
+		EF91B03B29883256001AE3CA /* ODiazExamenCoppelUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF91B03A29883256001AE3CA /* ODiazExamenCoppelUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EF91B02B29883256001AE3CA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EF91B00C29883252001AE3CA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EF91B01329883252001AE3CA;
+			remoteInfo = ODiazExamenCoppel;
+		};
+		EF91B03529883256001AE3CA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EF91B00C29883252001AE3CA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EF91B01329883252001AE3CA;
+			remoteInfo = ODiazExamenCoppel;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EF91B01429883252001AE3CA /* ODiazExamenCoppel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ODiazExamenCoppel.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF91B01729883252001AE3CA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EF91B01929883252001AE3CA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		EF91B01B29883252001AE3CA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EF91B01E29883252001AE3CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EF91B02029883256001AE3CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EF91B02329883256001AE3CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EF91B02529883256001AE3CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF91B02A29883256001AE3CA /* ODiazExamenCoppelTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ODiazExamenCoppelTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF91B02E29883256001AE3CA /* ODiazExamenCoppelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ODiazExamenCoppelTests.swift; sourceTree = "<group>"; };
+		EF91B03429883256001AE3CA /* ODiazExamenCoppelUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ODiazExamenCoppelUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF91B03829883256001AE3CA /* ODiazExamenCoppelUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ODiazExamenCoppelUITests.swift; sourceTree = "<group>"; };
+		EF91B03A29883256001AE3CA /* ODiazExamenCoppelUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ODiazExamenCoppelUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EF91B01129883252001AE3CA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF91B02729883256001AE3CA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF91B03129883256001AE3CA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EF91B00B29883252001AE3CA = {
+			isa = PBXGroup;
+			children = (
+				EF91B01629883252001AE3CA /* ODiazExamenCoppel */,
+				EF91B02D29883256001AE3CA /* ODiazExamenCoppelTests */,
+				EF91B03729883256001AE3CA /* ODiazExamenCoppelUITests */,
+				EF91B01529883252001AE3CA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EF91B01529883252001AE3CA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EF91B01429883252001AE3CA /* ODiazExamenCoppel.app */,
+				EF91B02A29883256001AE3CA /* ODiazExamenCoppelTests.xctest */,
+				EF91B03429883256001AE3CA /* ODiazExamenCoppelUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EF91B01629883252001AE3CA /* ODiazExamenCoppel */ = {
+			isa = PBXGroup;
+			children = (
+				EF91B01729883252001AE3CA /* AppDelegate.swift */,
+				EF91B01929883252001AE3CA /* SceneDelegate.swift */,
+				EF91B01B29883252001AE3CA /* ViewController.swift */,
+				EF91B01D29883252001AE3CA /* Main.storyboard */,
+				EF91B02029883256001AE3CA /* Assets.xcassets */,
+				EF91B02229883256001AE3CA /* LaunchScreen.storyboard */,
+				EF91B02529883256001AE3CA /* Info.plist */,
+			);
+			path = ODiazExamenCoppel;
+			sourceTree = "<group>";
+		};
+		EF91B02D29883256001AE3CA /* ODiazExamenCoppelTests */ = {
+			isa = PBXGroup;
+			children = (
+				EF91B02E29883256001AE3CA /* ODiazExamenCoppelTests.swift */,
+			);
+			path = ODiazExamenCoppelTests;
+			sourceTree = "<group>";
+		};
+		EF91B03729883256001AE3CA /* ODiazExamenCoppelUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EF91B03829883256001AE3CA /* ODiazExamenCoppelUITests.swift */,
+				EF91B03A29883256001AE3CA /* ODiazExamenCoppelUITestsLaunchTests.swift */,
+			);
+			path = ODiazExamenCoppelUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EF91B01329883252001AE3CA /* ODiazExamenCoppel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF91B03E29883256001AE3CA /* Build configuration list for PBXNativeTarget "ODiazExamenCoppel" */;
+			buildPhases = (
+				EF91B01029883252001AE3CA /* Sources */,
+				EF91B01129883252001AE3CA /* Frameworks */,
+				EF91B01229883252001AE3CA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ODiazExamenCoppel;
+			productName = ODiazExamenCoppel;
+			productReference = EF91B01429883252001AE3CA /* ODiazExamenCoppel.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EF91B02929883256001AE3CA /* ODiazExamenCoppelTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF91B04129883256001AE3CA /* Build configuration list for PBXNativeTarget "ODiazExamenCoppelTests" */;
+			buildPhases = (
+				EF91B02629883256001AE3CA /* Sources */,
+				EF91B02729883256001AE3CA /* Frameworks */,
+				EF91B02829883256001AE3CA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EF91B02C29883256001AE3CA /* PBXTargetDependency */,
+			);
+			name = ODiazExamenCoppelTests;
+			productName = ODiazExamenCoppelTests;
+			productReference = EF91B02A29883256001AE3CA /* ODiazExamenCoppelTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EF91B03329883256001AE3CA /* ODiazExamenCoppelUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF91B04429883256001AE3CA /* Build configuration list for PBXNativeTarget "ODiazExamenCoppelUITests" */;
+			buildPhases = (
+				EF91B03029883256001AE3CA /* Sources */,
+				EF91B03129883256001AE3CA /* Frameworks */,
+				EF91B03229883256001AE3CA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EF91B03629883256001AE3CA /* PBXTargetDependency */,
+			);
+			name = ODiazExamenCoppelUITests;
+			productName = ODiazExamenCoppelUITests;
+			productReference = EF91B03429883256001AE3CA /* ODiazExamenCoppelUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EF91B00C29883252001AE3CA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					EF91B01329883252001AE3CA = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					EF91B02929883256001AE3CA = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = EF91B01329883252001AE3CA;
+					};
+					EF91B03329883256001AE3CA = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = EF91B01329883252001AE3CA;
+					};
+				};
+			};
+			buildConfigurationList = EF91B00F29883252001AE3CA /* Build configuration list for PBXProject "ODiazExamenCoppel" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EF91B00B29883252001AE3CA;
+			productRefGroup = EF91B01529883252001AE3CA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EF91B01329883252001AE3CA /* ODiazExamenCoppel */,
+				EF91B02929883256001AE3CA /* ODiazExamenCoppelTests */,
+				EF91B03329883256001AE3CA /* ODiazExamenCoppelUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EF91B01229883252001AE3CA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF91B02429883256001AE3CA /* LaunchScreen.storyboard in Resources */,
+				EF91B02129883256001AE3CA /* Assets.xcassets in Resources */,
+				EF91B01F29883252001AE3CA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF91B02829883256001AE3CA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF91B03229883256001AE3CA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EF91B01029883252001AE3CA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF91B01C29883252001AE3CA /* ViewController.swift in Sources */,
+				EF91B01829883252001AE3CA /* AppDelegate.swift in Sources */,
+				EF91B01A29883252001AE3CA /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF91B02629883256001AE3CA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF91B02F29883256001AE3CA /* ODiazExamenCoppelTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF91B03029883256001AE3CA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF91B03929883256001AE3CA /* ODiazExamenCoppelUITests.swift in Sources */,
+				EF91B03B29883256001AE3CA /* ODiazExamenCoppelUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EF91B02C29883256001AE3CA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EF91B01329883252001AE3CA /* ODiazExamenCoppel */;
+			targetProxy = EF91B02B29883256001AE3CA /* PBXContainerItemProxy */;
+		};
+		EF91B03629883256001AE3CA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EF91B01329883252001AE3CA /* ODiazExamenCoppel */;
+			targetProxy = EF91B03529883256001AE3CA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EF91B01D29883252001AE3CA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EF91B01E29883252001AE3CA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EF91B02229883256001AE3CA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EF91B02329883256001AE3CA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EF91B03C29883256001AE3CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EF91B03D29883256001AE3CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EF91B03F29883256001AE3CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 29MPKB7M6L;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ODiazExamenCoppel/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.digi01.ODiazExamenCoppel.ODiazExamenCoppel;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EF91B04029883256001AE3CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 29MPKB7M6L;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ODiazExamenCoppel/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.digi01.ODiazExamenCoppel.ODiazExamenCoppel;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		EF91B04229883256001AE3CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 29MPKB7M6L;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.digi01.ODiazExamenCoppel.ODiazExamenCoppelTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ODiazExamenCoppel.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ODiazExamenCoppel";
+			};
+			name = Debug;
+		};
+		EF91B04329883256001AE3CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 29MPKB7M6L;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.digi01.ODiazExamenCoppel.ODiazExamenCoppelTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ODiazExamenCoppel.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ODiazExamenCoppel";
+			};
+			name = Release;
+		};
+		EF91B04529883256001AE3CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 29MPKB7M6L;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.digi01.ODiazExamenCoppel.ODiazExamenCoppelUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ODiazExamenCoppel;
+			};
+			name = Debug;
+		};
+		EF91B04629883256001AE3CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 29MPKB7M6L;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.digi01.ODiazExamenCoppel.ODiazExamenCoppelUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ODiazExamenCoppel;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EF91B00F29883252001AE3CA /* Build configuration list for PBXProject "ODiazExamenCoppel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF91B03C29883256001AE3CA /* Debug */,
+				EF91B03D29883256001AE3CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF91B03E29883256001AE3CA /* Build configuration list for PBXNativeTarget "ODiazExamenCoppel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF91B03F29883256001AE3CA /* Debug */,
+				EF91B04029883256001AE3CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF91B04129883256001AE3CA /* Build configuration list for PBXNativeTarget "ODiazExamenCoppelTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF91B04229883256001AE3CA /* Debug */,
+				EF91B04329883256001AE3CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF91B04429883256001AE3CA /* Build configuration list for PBXNativeTarget "ODiazExamenCoppelUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF91B04529883256001AE3CA /* Debug */,
+				EF91B04629883256001AE3CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EF91B00C29883252001AE3CA /* Project object */;
+}
