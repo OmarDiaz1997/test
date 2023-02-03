@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EF3790F6298C620400BA3DE9 /* SessionIdViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3790F5298C620400BA3DE9 /* SessionIdViewModel.swift */; };
+		EF3790F8298C6A0F00BA3DE9 /* SendFavoriteMovies.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3790F7298C6A0F00BA3DE9 /* SendFavoriteMovies.swift */; };
+		EF3790FA298C916B00BA3DE9 /* SeccionesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3790F9298C916B00BA3DE9 /* SeccionesViewController.swift */; };
 		EF91B01829883252001AE3CA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF91B01729883252001AE3CA /* AppDelegate.swift */; };
 		EF91B01A29883252001AE3CA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF91B01929883252001AE3CA /* SceneDelegate.swift */; };
 		EF91B01C29883252001AE3CA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF91B01B29883252001AE3CA /* ViewController.swift */; };
@@ -16,6 +19,19 @@
 		EF91B02F29883256001AE3CA /* ODiazExamenCoppelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF91B02E29883256001AE3CA /* ODiazExamenCoppelTests.swift */; };
 		EF91B03929883256001AE3CA /* ODiazExamenCoppelUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF91B03829883256001AE3CA /* ODiazExamenCoppelUITests.swift */; };
 		EF91B03B29883256001AE3CA /* ODiazExamenCoppelUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF91B03A29883256001AE3CA /* ODiazExamenCoppelUITestsLaunchTests.swift */; };
+		EF91B04C2988334B001AE3CA /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF91B04B2988334B001AE3CA /* Movie.swift */; };
+		EF91B04F298837D8001AE3CA /* PeliculaCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF91B04D298837D8001AE3CA /* PeliculaCollectionViewCell.swift */; };
+		EF91B050298837D8001AE3CA /* PeliculaCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF91B04E298837D8001AE3CA /* PeliculaCollectionViewCell.xib */; };
+		EF91B05429885971001AE3CA /* CreateSessionWithLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF91B05329885971001AE3CA /* CreateSessionWithLogin.swift */; };
+		EF91B057298873C8001AE3CA /* RequestToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF91B056298873C8001AE3CA /* RequestToken.swift */; };
+		EF91B05929887560001AE3CA /* AuthorizeRequestToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF91B05829887560001AE3CA /* AuthorizeRequestToken.swift */; };
+		EF91B05B29887736001AE3CA /* SessionId.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF91B05A29887736001AE3CA /* SessionId.swift */; };
+		EF91B05E29887B35001AE3CA /* MovieViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF91B05D29887B35001AE3CA /* MovieViewModel.swift */; };
+		EF91B062298881F7001AE3CA /* RequestTokenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF91B061298881F7001AE3CA /* RequestTokenViewModel.swift */; };
+		EF92E564298B30800048B7B2 /* ResultMovies.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF92E563298B30800048B7B2 /* ResultMovies.swift */; };
+		EF92E568298B33E30048B7B2 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF92E567298B33E30048B7B2 /* Result.swift */; };
+		EF92E56B298B37F60048B7B2 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF92E56A298B37F60048B7B2 /* Login.swift */; };
+		EF92E56D298B398E0048B7B2 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF92E56C298B398E0048B7B2 /* LoginViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +52,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EF3790F5298C620400BA3DE9 /* SessionIdViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionIdViewModel.swift; sourceTree = "<group>"; };
+		EF3790F7298C6A0F00BA3DE9 /* SendFavoriteMovies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendFavoriteMovies.swift; sourceTree = "<group>"; };
+		EF3790F9298C916B00BA3DE9 /* SeccionesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeccionesViewController.swift; sourceTree = "<group>"; };
 		EF91B01429883252001AE3CA /* ODiazExamenCoppel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ODiazExamenCoppel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF91B01729883252001AE3CA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EF91B01929883252001AE3CA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +68,19 @@
 		EF91B03429883256001AE3CA /* ODiazExamenCoppelUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ODiazExamenCoppelUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF91B03829883256001AE3CA /* ODiazExamenCoppelUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ODiazExamenCoppelUITests.swift; sourceTree = "<group>"; };
 		EF91B03A29883256001AE3CA /* ODiazExamenCoppelUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ODiazExamenCoppelUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		EF91B04B2988334B001AE3CA /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		EF91B04D298837D8001AE3CA /* PeliculaCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeliculaCollectionViewCell.swift; sourceTree = "<group>"; };
+		EF91B04E298837D8001AE3CA /* PeliculaCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PeliculaCollectionViewCell.xib; sourceTree = "<group>"; };
+		EF91B05329885971001AE3CA /* CreateSessionWithLogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateSessionWithLogin.swift; sourceTree = "<group>"; };
+		EF91B056298873C8001AE3CA /* RequestToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestToken.swift; sourceTree = "<group>"; };
+		EF91B05829887560001AE3CA /* AuthorizeRequestToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizeRequestToken.swift; sourceTree = "<group>"; };
+		EF91B05A29887736001AE3CA /* SessionId.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionId.swift; sourceTree = "<group>"; };
+		EF91B05D29887B35001AE3CA /* MovieViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieViewModel.swift; sourceTree = "<group>"; };
+		EF91B061298881F7001AE3CA /* RequestTokenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestTokenViewModel.swift; sourceTree = "<group>"; };
+		EF92E563298B30800048B7B2 /* ResultMovies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultMovies.swift; sourceTree = "<group>"; };
+		EF92E567298B33E30048B7B2 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		EF92E56A298B37F60048B7B2 /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
+		EF92E56C298B398E0048B7B2 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,12 +131,10 @@
 		EF91B01629883252001AE3CA /* ODiazExamenCoppel */ = {
 			isa = PBXGroup;
 			children = (
-				EF91B01729883252001AE3CA /* AppDelegate.swift */,
-				EF91B01929883252001AE3CA /* SceneDelegate.swift */,
-				EF91B01B29883252001AE3CA /* ViewController.swift */,
-				EF91B01D29883252001AE3CA /* Main.storyboard */,
-				EF91B02029883256001AE3CA /* Assets.xcassets */,
-				EF91B02229883256001AE3CA /* LaunchScreen.storyboard */,
+				EF91B04A29883284001AE3CA /* View */,
+				EF91B04929883275001AE3CA /* Controller */,
+				EF91B0482988326B001AE3CA /* ViewModel */,
+				EF91B04729883261001AE3CA /* Model */,
 				EF91B02529883256001AE3CA /* Info.plist */,
 			);
 			path = ODiazExamenCoppel;
@@ -125,6 +155,96 @@
 				EF91B03A29883256001AE3CA /* ODiazExamenCoppelUITestsLaunchTests.swift */,
 			);
 			path = ODiazExamenCoppelUITests;
+			sourceTree = "<group>";
+		};
+		EF91B04729883261001AE3CA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EF92E569298B37D90048B7B2 /* Envio */,
+				EF91B05529887399001AE3CA /* MovieDB */,
+				EF91B05329885971001AE3CA /* CreateSessionWithLogin.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EF91B0482988326B001AE3CA /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				EF91B05C29887B1F001AE3CA /* Movie */,
+				EF92E56C298B398E0048B7B2 /* LoginViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		EF91B04929883275001AE3CA /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EF3790F9298C916B00BA3DE9 /* SeccionesViewController.swift */,
+				EF91B0522988382C001AE3CA /* Movie */,
+				EF91B01929883252001AE3CA /* SceneDelegate.swift */,
+				EF91B01B29883252001AE3CA /* ViewController.swift */,
+				EF91B01729883252001AE3CA /* AppDelegate.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		EF91B04A29883284001AE3CA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EF91B05129883820001AE3CA /* Movie */,
+				EF91B02029883256001AE3CA /* Assets.xcassets */,
+				EF91B02229883256001AE3CA /* LaunchScreen.storyboard */,
+				EF91B01D29883252001AE3CA /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EF91B05129883820001AE3CA /* Movie */ = {
+			isa = PBXGroup;
+			children = (
+				EF91B04E298837D8001AE3CA /* PeliculaCollectionViewCell.xib */,
+			);
+			path = Movie;
+			sourceTree = "<group>";
+		};
+		EF91B0522988382C001AE3CA /* Movie */ = {
+			isa = PBXGroup;
+			children = (
+				EF91B04D298837D8001AE3CA /* PeliculaCollectionViewCell.swift */,
+			);
+			path = Movie;
+			sourceTree = "<group>";
+		};
+		EF91B05529887399001AE3CA /* MovieDB */ = {
+			isa = PBXGroup;
+			children = (
+				EF91B04B2988334B001AE3CA /* Movie.swift */,
+				EF91B056298873C8001AE3CA /* RequestToken.swift */,
+				EF91B05829887560001AE3CA /* AuthorizeRequestToken.swift */,
+				EF91B05A29887736001AE3CA /* SessionId.swift */,
+				EF92E563298B30800048B7B2 /* ResultMovies.swift */,
+				EF92E567298B33E30048B7B2 /* Result.swift */,
+			);
+			path = MovieDB;
+			sourceTree = "<group>";
+		};
+		EF91B05C29887B1F001AE3CA /* Movie */ = {
+			isa = PBXGroup;
+			children = (
+				EF91B05D29887B35001AE3CA /* MovieViewModel.swift */,
+				EF91B061298881F7001AE3CA /* RequestTokenViewModel.swift */,
+				EF3790F5298C620400BA3DE9 /* SessionIdViewModel.swift */,
+			);
+			path = Movie;
+			sourceTree = "<group>";
+		};
+		EF92E569298B37D90048B7B2 /* Envio */ = {
+			isa = PBXGroup;
+			children = (
+				EF92E56A298B37F60048B7B2 /* Login.swift */,
+				EF3790F7298C6A0F00BA3DE9 /* SendFavoriteMovies.swift */,
+			);
+			path = Envio;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,6 +352,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EF91B02429883256001AE3CA /* LaunchScreen.storyboard in Resources */,
+				EF91B050298837D8001AE3CA /* PeliculaCollectionViewCell.xib in Resources */,
 				EF91B02129883256001AE3CA /* Assets.xcassets in Resources */,
 				EF91B01F29883252001AE3CA /* Main.storyboard in Resources */,
 			);
@@ -258,8 +379,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF3790FA298C916B00BA3DE9 /* SeccionesViewController.swift in Sources */,
+				EF91B04F298837D8001AE3CA /* PeliculaCollectionViewCell.swift in Sources */,
+				EF91B05E29887B35001AE3CA /* MovieViewModel.swift in Sources */,
 				EF91B01C29883252001AE3CA /* ViewController.swift in Sources */,
+				EF92E56D298B398E0048B7B2 /* LoginViewModel.swift in Sources */,
+				EF3790F6298C620400BA3DE9 /* SessionIdViewModel.swift in Sources */,
+				EF3790F8298C6A0F00BA3DE9 /* SendFavoriteMovies.swift in Sources */,
+				EF92E568298B33E30048B7B2 /* Result.swift in Sources */,
+				EF91B062298881F7001AE3CA /* RequestTokenViewModel.swift in Sources */,
+				EF92E56B298B37F60048B7B2 /* Login.swift in Sources */,
+				EF91B05B29887736001AE3CA /* SessionId.swift in Sources */,
+				EF91B057298873C8001AE3CA /* RequestToken.swift in Sources */,
+				EF91B05929887560001AE3CA /* AuthorizeRequestToken.swift in Sources */,
+				EF91B05429885971001AE3CA /* CreateSessionWithLogin.swift in Sources */,
 				EF91B01829883252001AE3CA /* AppDelegate.swift in Sources */,
+				EF91B04C2988334B001AE3CA /* Movie.swift in Sources */,
+				EF92E564298B30800048B7B2 /* ResultMovies.swift in Sources */,
 				EF91B01A29883252001AE3CA /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
