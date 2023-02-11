@@ -32,6 +32,16 @@
 		EF92E568298B33E30048B7B2 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF92E567298B33E30048B7B2 /* Result.swift */; };
 		EF92E56B298B37F60048B7B2 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF92E56A298B37F60048B7B2 /* Login.swift */; };
 		EF92E56D298B398E0048B7B2 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF92E56C298B398E0048B7B2 /* LoginViewModel.swift */; };
+		EFB22339299405F200BB550D /* DeleteSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB22338299405F200BB550D /* DeleteSession.swift */; };
+		EFB2233B2994180700BB550D /* PerfilViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB2233A2994180700BB550D /* PerfilViewController.swift */; };
+		EFB2233D2994214100BB550D /* PerfilModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB2233C2994214100BB550D /* PerfilModel.swift */; };
+		EFB22341299422C400BB550D /* PerfilViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB22340299422C400BB550D /* PerfilViewModel.swift */; };
+		EFC163CB2996A240000F18CA /* TV.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC163CA2996A240000F18CA /* TV.swift */; };
+		EFC163CD2996D1F5000F18CA /* ResultTV.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC163CC2996D1F5000F18CA /* ResultTV.swift */; };
+		EFC163D02996D3A1000F18CA /* TVViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC163CF2996D3A1000F18CA /* TVViewModel.swift */; };
+		EFEE801C2992D8C30090A048 /* MovieCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFEE801A2992D8C30090A048 /* MovieCollectionViewCell.swift */; };
+		EFEE801D2992D8C30090A048 /* MovieCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EFEE801B2992D8C30090A048 /* MovieCollectionViewCell.xib */; };
+		EFF75E4F299575E300FA94B8 /* DetallesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF75E4E299575E300FA94B8 /* DetallesViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +91,16 @@
 		EF92E567298B33E30048B7B2 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 		EF92E56A298B37F60048B7B2 /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
 		EF92E56C298B398E0048B7B2 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		EFB22338299405F200BB550D /* DeleteSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteSession.swift; sourceTree = "<group>"; };
+		EFB2233A2994180700BB550D /* PerfilViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerfilViewController.swift; sourceTree = "<group>"; };
+		EFB2233C2994214100BB550D /* PerfilModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerfilModel.swift; sourceTree = "<group>"; };
+		EFB22340299422C400BB550D /* PerfilViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerfilViewModel.swift; sourceTree = "<group>"; };
+		EFC163CA2996A240000F18CA /* TV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TV.swift; sourceTree = "<group>"; };
+		EFC163CC2996D1F5000F18CA /* ResultTV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultTV.swift; sourceTree = "<group>"; };
+		EFC163CF2996D3A1000F18CA /* TVViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVViewModel.swift; sourceTree = "<group>"; };
+		EFEE801A2992D8C30090A048 /* MovieCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCollectionViewCell.swift; sourceTree = "<group>"; };
+		EFEE801B2992D8C30090A048 /* MovieCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MovieCollectionViewCell.xib; sourceTree = "<group>"; };
+		EFF75E4E299575E300FA94B8 /* DetallesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetallesViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,6 +180,7 @@
 		EF91B04729883261001AE3CA /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				EFC163C92996A21D000F18CA /* TV */,
 				EF92E569298B37D90048B7B2 /* Envio */,
 				EF91B05529887399001AE3CA /* MovieDB */,
 				EF91B05329885971001AE3CA /* CreateSessionWithLogin.swift */,
@@ -170,6 +191,8 @@
 		EF91B0482988326B001AE3CA /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				EFC163CE2996D388000F18CA /* TV */,
+				EFB2233F299422A300BB550D /* Perfil */,
 				EF91B05C29887B1F001AE3CA /* Movie */,
 				EF92E56C298B398E0048B7B2 /* LoginViewModel.swift */,
 			);
@@ -179,11 +202,13 @@
 		EF91B04929883275001AE3CA /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				EFB2233A2994180700BB550D /* PerfilViewController.swift */,
 				EF3790F9298C916B00BA3DE9 /* SeccionesViewController.swift */,
 				EF91B0522988382C001AE3CA /* Movie */,
 				EF91B01929883252001AE3CA /* SceneDelegate.swift */,
 				EF91B01B29883252001AE3CA /* ViewController.swift */,
 				EF91B01729883252001AE3CA /* AppDelegate.swift */,
+				EFF75E4E299575E300FA94B8 /* DetallesViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -203,6 +228,8 @@
 			isa = PBXGroup;
 			children = (
 				EF91B04E298837D8001AE3CA /* PeliculaCollectionViewCell.xib */,
+				EFEE801A2992D8C30090A048 /* MovieCollectionViewCell.swift */,
+				EFEE801B2992D8C30090A048 /* MovieCollectionViewCell.xib */,
 			);
 			path = Movie;
 			sourceTree = "<group>";
@@ -224,6 +251,8 @@
 				EF91B05A29887736001AE3CA /* SessionId.swift */,
 				EF92E563298B30800048B7B2 /* ResultMovies.swift */,
 				EF92E567298B33E30048B7B2 /* Result.swift */,
+				EFB22338299405F200BB550D /* DeleteSession.swift */,
+				EFB2233C2994214100BB550D /* PerfilModel.swift */,
 			);
 			path = MovieDB;
 			sourceTree = "<group>";
@@ -245,6 +274,31 @@
 				EF3790F7298C6A0F00BA3DE9 /* SendFavoriteMovies.swift */,
 			);
 			path = Envio;
+			sourceTree = "<group>";
+		};
+		EFB2233F299422A300BB550D /* Perfil */ = {
+			isa = PBXGroup;
+			children = (
+				EFB22340299422C400BB550D /* PerfilViewModel.swift */,
+				EFC163CC2996D1F5000F18CA /* ResultTV.swift */,
+			);
+			path = Perfil;
+			sourceTree = "<group>";
+		};
+		EFC163C92996A21D000F18CA /* TV */ = {
+			isa = PBXGroup;
+			children = (
+				EFC163CA2996A240000F18CA /* TV.swift */,
+			);
+			path = TV;
+			sourceTree = "<group>";
+		};
+		EFC163CE2996D388000F18CA /* TV */ = {
+			isa = PBXGroup;
+			children = (
+				EFC163CF2996D3A1000F18CA /* TVViewModel.swift */,
+			);
+			path = TV;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -351,6 +405,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EFEE801D2992D8C30090A048 /* MovieCollectionViewCell.xib in Resources */,
 				EF91B02429883256001AE3CA /* LaunchScreen.storyboard in Resources */,
 				EF91B050298837D8001AE3CA /* PeliculaCollectionViewCell.xib in Resources */,
 				EF91B02129883256001AE3CA /* Assets.xcassets in Resources */,
@@ -380,21 +435,30 @@
 			buildActionMask = 2147483647;
 			files = (
 				EF3790FA298C916B00BA3DE9 /* SeccionesViewController.swift in Sources */,
+				EFB2233D2994214100BB550D /* PerfilModel.swift in Sources */,
+				EFC163CD2996D1F5000F18CA /* ResultTV.swift in Sources */,
 				EF91B04F298837D8001AE3CA /* PeliculaCollectionViewCell.swift in Sources */,
 				EF91B05E29887B35001AE3CA /* MovieViewModel.swift in Sources */,
 				EF91B01C29883252001AE3CA /* ViewController.swift in Sources */,
 				EF92E56D298B398E0048B7B2 /* LoginViewModel.swift in Sources */,
 				EF3790F6298C620400BA3DE9 /* SessionIdViewModel.swift in Sources */,
 				EF3790F8298C6A0F00BA3DE9 /* SendFavoriteMovies.swift in Sources */,
+				EFC163CB2996A240000F18CA /* TV.swift in Sources */,
 				EF92E568298B33E30048B7B2 /* Result.swift in Sources */,
 				EF91B062298881F7001AE3CA /* RequestTokenViewModel.swift in Sources */,
+				EFB22339299405F200BB550D /* DeleteSession.swift in Sources */,
 				EF92E56B298B37F60048B7B2 /* Login.swift in Sources */,
 				EF91B05B29887736001AE3CA /* SessionId.swift in Sources */,
+				EFB2233B2994180700BB550D /* PerfilViewController.swift in Sources */,
 				EF91B057298873C8001AE3CA /* RequestToken.swift in Sources */,
+				EFEE801C2992D8C30090A048 /* MovieCollectionViewCell.swift in Sources */,
 				EF91B05929887560001AE3CA /* AuthorizeRequestToken.swift in Sources */,
 				EF91B05429885971001AE3CA /* CreateSessionWithLogin.swift in Sources */,
+				EFB22341299422C400BB550D /* PerfilViewModel.swift in Sources */,
 				EF91B01829883252001AE3CA /* AppDelegate.swift in Sources */,
+				EFF75E4F299575E300FA94B8 /* DetallesViewController.swift in Sources */,
 				EF91B04C2988334B001AE3CA /* Movie.swift in Sources */,
+				EFC163D02996D3A1000F18CA /* TVViewModel.swift in Sources */,
 				EF92E564298B30800048B7B2 /* ResultMovies.swift in Sources */,
 				EF91B01A29883252001AE3CA /* SceneDelegate.swift in Sources */,
 			);

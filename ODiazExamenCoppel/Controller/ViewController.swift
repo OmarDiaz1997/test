@@ -19,18 +19,12 @@ class ViewController: UIViewController {
     let requestViewModel = ResquestTokenViewModel()
     var requestModel: RequestToken? = nil
     
-    
-    
-    
-    //let login = LoginViewModel()
-
-    
     /* Autorizacion de inicio de sesion */
     let autorizacionViewModel = LoginViewModel()
     var autorizacionModel: AuthorizeRequestToken? = nil
     
 
-    
+    //let login = LoginViewModel()
     
     /* ID sesion*/
     let sesionIdViewModel = SessionIdViewModel()
@@ -46,79 +40,63 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         CreateNewRequestToken()
         
-        
-        
-        
-        
-        func CreateNewRequestToken(){
-            let newToken = requestViewModel.GetResquestToken(api_key: api_key, token: {requestData, error in
-                if let requestData1 = requestData{
-                    self.requestModel = requestData1
-                }
-                if let error1 = error{
-                    print(error1.localizedDescription)
-                }
-            })
-        }
-        
-        
-
-        
-        
-        
-        
-        
-        func createSessionId(requestToken: SessionId){
-            sesionIdViewModel.GetSessionId(request_token: requestToken.session_id, session: {requestData, error in
-                if let requestData1 = requestData{
-                    self.sessionIdModel = requestData1
-                }
-                if let error1 = error{
-                    print(error1.localizedDescription)
-                }
-            })
-        }
-        
-        func GetAllFavoritesMovies(){
-            favoriteMoviesViewModel.GetAllFavoriteMovies(session: id, token: {requestData, error in
-                if let requestData1 = requestData{
-                    self.favotiteMoviesModel = requestData1
-                }
-                if let error1 = error{
-                    print(error1.localizedDescription)
-                }
-            })
-        }
-        
-        /*autorizacionViewModel.Login(username: "omardiaz", password: "Welcome01$$$@", request_token: "8be679704e8d7dae0becadd4e06e0e2309c0fce5", authorized: {requestData, error in
-            if let requestData1 = requestData{
-                self.autorizacionModel = requestData1
-            }
-            if let error1 = error{
-                print(error1.localizedDescription)
-            }
-        })*/
-        
-        
-        
-        //var login = LoginViewModel()
-        
+    
     }
     
-    func AuthorizedRequesToken(request: String, userName: String, password: String){
-        autorizacionViewModel.Login(username: userName,
-                                    password: password,
-                                    request_token: request,
-                                    authorized: {requestData, error in
+    
+    //MARK: -Crear nuevo request token
+    func CreateNewRequestToken(){
+        let newToken = requestViewModel.GetResquestToken(api_key: api_key, token: {requestData, error in
             if let requestData1 = requestData{
-                self.autorizacionModel = requestData1
-                //createSessionId(requestToken: <#T##SessionId#>)
+                self.requestModel = requestData1
             }
             if let error1 = error{
                 print(error1.localizedDescription)
             }
         })
     }
+    
+    
+    func AuthorizedRequesToken(request: String, userName: String, password: String){
+        autorizacionViewModel.Login(username: userName,
+                                    password: password,
+                                    request_token: String(requestModel!.request_token),
+                                    authorized: {requestData, error in
+            if let requestData1 = requestData{
+                self.autorizacionModel = requestData1
+                self.createSessionId(requestToken: String(self.requestModel!.request_token))
+                UserDefaults.standard.set(userName, forKey: "userName")
+                UserDefaults.standard.synchronize()
+            }
+            if let error1 = error{
+                print(error1.localizedDescription)
+            }
+        })
+    }
+    
+    
+    
+    func createSessionId(requestToken: String){
+        sesionIdViewModel.GetSessionId(request_token: requestToken, session: {requestData, error in
+            if let requestData1 = requestData{
+                self.sessionIdModel = requestData1
+                UserDefaults.standard.set(self.sessionIdModel?.session_id,
+                                          forKey: "sessionId")
+                UserDefaults.standard.synchronize()
+                //Segues
+                DispatchQueue.main.async {
+                    self.performSegue(withIdentifier: "login", sender: self)
+                }
+                print("Sesion id creada")
+            }
+            if let error1 = error{
+                print(error1.localizedDescription)
+            }
+        })
+    }
+    
+    
+    
     
     
     
@@ -133,7 +111,9 @@ class ViewController: UIViewController {
             return
         }
         
-        AuthorizedRequesToken(request: requestModel!.request_token, userName: NombreUsuario, password: Contrasenia)
+        AuthorizedRequesToken(request: requestModel!.request_token,
+                              userName: NombreUsuario,
+                              password: Contrasenia)
         
     }
     

@@ -21,7 +21,7 @@ class SessionIdViewModel: ObservableObject{
         Login(username: "omardiaz", password: "Welcome01$$$@", request_token: request_token)
     }*/
     
-    func GetSessionId(request_token: String,session : @escaping (SessionId?, Error?) -> Void){
+    func GetSessionId(request_token: String, session : @escaping (SessionId?, Error?) -> Void){
         let decoder = JSONDecoder()
         guard let url = URL(string: "https://api.themoviedb.org/3/authentication/session/new?api_key=\(api_key)") else { return }
         let parametros = ["request_token": request_token]

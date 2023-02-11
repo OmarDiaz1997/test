@@ -11,42 +11,58 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Movie" id="gTV-IL-0wX" customClass="PeliculaCollectionViewCell" customModule="ODiazExamenCoppel" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="151" height="321"/>
+            <rect key="frame" x="0.0" y="0.0" width="175" height="428"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                <rect key="frame" x="0.0" y="0.0" width="151" height="321"/>
+                <rect key="frame" x="0.0" y="0.0" width="175" height="428"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ybk-go-i3T">
-                        <rect key="frame" x="0.0" y="0.0" width="151" height="321"/>
+                        <rect key="frame" x="0.0" y="0.0" width="175" height="428"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uxH-Dh-Kux">
-                                <rect key="frame" x="0.0" y="0.0" width="151" height="200"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="uxH-Dh-Kux">
+                                <rect key="frame" x="0.0" y="0.0" width="175" height="250"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="250" id="dHf-e4-h1Z"/>
+                                </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Titulo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L79-OV-jK1">
-                                <rect key="frame" x="8" y="208" width="135" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Titulo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L79-OV-jK1">
+                                <rect key="frame" x="8" y="258" width="159" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="SQ7-Xo-hMb"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <color key="textColor" name="peliculasLabel"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Rank" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="my2-BM-wHU">
-                                <rect key="frame" x="98" y="237" width="41" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fecha" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XuO-Pe-qJq">
+                                <rect key="frame" x="8" y="326" width="100" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="rZX-Bo-ayT"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <color key="textColor" name="peliculasLabel"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Fecha" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XuO-Pe-qJq">
-                                <rect key="frame" x="8" y="237" width="85" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rank" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="my2-BM-wHU">
+                                <rect key="frame" x="126" y="326" width="41" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="41" id="MDC-Lu-3TI"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <color key="textColor" name="peliculasLabel"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Descripcion" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sCc-Q6-Lf1">
-                                <rect key="frame" x="8" y="266" width="131" height="47"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R9o-vJ-dMq">
+                                <rect key="frame" x="102" y="314" width="22" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="star.fill" catalog="system">
+                                    <color key="baseForegroundColor" name="peliculasLabel"/>
+                                </buttonConfiguration>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Descripcion" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sCc-Q6-Lf1">
+                                <rect key="frame" x="8" y="355" width="159" height="65"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -54,17 +70,29 @@
                             </label>
                         </subviews>
                         <color key="backgroundColor" name="peliculasView"/>
+                        <constraints>
+                            <constraint firstItem="XuO-Pe-qJq" firstAttribute="top" secondItem="L79-OV-jK1" secondAttribute="bottom" constant="8" id="92C-Wh-OCC"/>
+                            <constraint firstAttribute="trailing" secondItem="L79-OV-jK1" secondAttribute="trailing" constant="8" id="Frq-nE-DSu"/>
+                            <constraint firstAttribute="trailing" secondItem="my2-BM-wHU" secondAttribute="trailing" constant="8" id="KEc-Bt-PoL"/>
+                            <constraint firstItem="L79-OV-jK1" firstAttribute="leading" secondItem="ybk-go-i3T" secondAttribute="leading" constant="8" id="YJy-Gc-AuK"/>
+                            <constraint firstItem="XuO-Pe-qJq" firstAttribute="leading" secondItem="ybk-go-i3T" secondAttribute="leading" constant="8" id="aH5-ZB-nfd"/>
+                            <constraint firstAttribute="trailing" secondItem="uxH-Dh-Kux" secondAttribute="trailing" id="acN-pU-iUD"/>
+                            <constraint firstItem="my2-BM-wHU" firstAttribute="top" secondItem="L79-OV-jK1" secondAttribute="bottom" constant="8" id="gW5-G2-3PV"/>
+                            <constraint firstItem="uxH-Dh-Kux" firstAttribute="leading" secondItem="ybk-go-i3T" secondAttribute="leading" id="n98-dH-aax"/>
+                            <constraint firstItem="L79-OV-jK1" firstAttribute="top" secondItem="uxH-Dh-Kux" secondAttribute="bottom" constant="8" id="tTf-aM-ncI"/>
+                            <constraint firstItem="uxH-Dh-Kux" firstAttribute="top" secondItem="ybk-go-i3T" secondAttribute="top" id="tiS-9E-LEG"/>
+                        </constraints>
                     </view>
                 </subviews>
             </view>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <constraints>
-                <constraint firstItem="ybk-go-i3T" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="2HI-MT-KTC"/>
-                <constraint firstAttribute="trailing" secondItem="ybk-go-i3T" secondAttribute="trailing" id="Hoi-in-ZQo"/>
-                <constraint firstItem="ybk-go-i3T" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Tgq-wq-QQE"/>
-                <constraint firstAttribute="bottom" secondItem="ybk-go-i3T" secondAttribute="bottom" id="yqw-ks-qkN"/>
+                <constraint firstAttribute="bottom" secondItem="ybk-go-i3T" secondAttribute="bottom" id="H7w-yN-dLW"/>
+                <constraint firstItem="ybk-go-i3T" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="lxe-gy-OXP"/>
+                <constraint firstAttribute="trailing" secondItem="ybk-go-i3T" secondAttribute="trailing" id="mCa-vr-XJc"/>
+                <constraint firstItem="ybk-go-i3T" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="oXe-sb-0fj"/>
             </constraints>
-            <size key="customSize" width="151" height="321"/>
+            <size key="customSize" width="175" height="428"/>
             <connections>
                 <outlet property="DescriptionLabel" destination="sCc-Q6-Lf1" id="QEi-8N-Pjb"/>
                 <outlet property="FechaLabel" destination="XuO-Pe-qJq" id="UQs-lO-mTf"/>
@@ -72,10 +100,11 @@
                 <outlet property="RankLabel" destination="my2-BM-wHU" id="QDg-JS-whG"/>
                 <outlet property="TituloLabel" destination="L79-OV-jK1" id="kFo-Ld-t6c"/>
             </connections>
-            <point key="canvasLocation" x="48.091603053435115" y="27.816901408450704"/>
+            <point key="canvasLocation" x="58.778625954198468" y="117.60563380281691"/>
         </collectionViewCell>
     </objects>
     <resources>
+        <image name="star.fill" catalog="system" width="128" height="116"/>
         <namedColor name="peliculasLabel">
             <color red="0.32941176470588235" green="0.70588235294117652" blue="0.20784313725490197" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
