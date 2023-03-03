@@ -3,40 +3,106 @@
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="MovieCollectionViewCell" customModule="ODiazExamenCoppel" customModuleProvider="target">
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" reuseIdentifier="MovieCell" id="gTV-IL-0wX" customClass="MovieCollectionViewCell" customModule="ODiazExamenCoppel" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="200" height="440"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                 <rect key="frame" x="0.0" y="0.0" width="200" height="440"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JTK-dL-Dbk">
-                        <rect key="frame" x="0.0" y="0.0" width="200" height="440"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JTK-dL-Dbk">
+                        <rect key="frame" x="0.0" y="-30" width="200" height="470"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Vfh-Zw-8oD">
-                                <rect key="frame" x="0.0" y="0.0" width="200" height="228"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Vfh-Zw-8oD">
+                                <rect key="frame" x="0.0" y="0.0" width="200" height="254"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="254" id="Amf-Mw-hPj"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Fecha" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D4r-W0-3Kh">
+                                <rect key="frame" x="5" y="275" width="100" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <color key="textColor" name="peliculasLabel"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="fIy-vw-K1K">
+                                <rect key="frame" x="8" y="412" width="184" height="50"/>
+                                <color key="backgroundColor" name="peliculasView"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="5NX-ig-VKk"/>
+                                </constraints>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </string>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Titulo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gem-zE-o74">
+                                <rect key="frame" x="5" y="249" width="190" height="18"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <color key="textColor" name="peliculasLabel"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rank" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6yE-eh-Sfn">
+                                <rect key="frame" x="155" y="275" width="37" height="18"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <color key="textColor" name="peliculasLabel"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="star.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="BUe-bb-0ay">
+                                <rect key="frame" x="117" y="264.66666666666663" width="30" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" name="peliculasLabel"/>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" name="peliculasView"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="6yE-eh-Sfn" secondAttribute="trailing" constant="8" id="757-xu-WLO"/>
+                            <constraint firstItem="Vfh-Zw-8oD" firstAttribute="top" secondItem="JTK-dL-Dbk" secondAttribute="top" id="F6F-KW-tOm"/>
+                            <constraint firstItem="gem-zE-o74" firstAttribute="leading" secondItem="JTK-dL-Dbk" secondAttribute="leading" constant="5" id="Ifl-fQ-8HK"/>
+                            <constraint firstItem="Vfh-Zw-8oD" firstAttribute="leading" secondItem="JTK-dL-Dbk" secondAttribute="leading" id="Jyk-eG-MH3"/>
+                            <constraint firstAttribute="bottom" secondItem="fIy-vw-K1K" secondAttribute="bottom" constant="8" id="N6v-0F-z2J"/>
+                            <constraint firstAttribute="trailing" secondItem="gem-zE-o74" secondAttribute="trailing" constant="5" id="Ro4-9Y-bfo"/>
+                            <constraint firstItem="gem-zE-o74" firstAttribute="top" secondItem="Vfh-Zw-8oD" secondAttribute="bottom" constant="-5" id="Y1k-Sb-94P"/>
+                            <constraint firstItem="fIy-vw-K1K" firstAttribute="leading" secondItem="JTK-dL-Dbk" secondAttribute="leading" constant="8" id="bsE-YG-R11"/>
+                            <constraint firstItem="6yE-eh-Sfn" firstAttribute="top" secondItem="gem-zE-o74" secondAttribute="bottom" constant="8" id="c06-aQ-k9o"/>
+                            <constraint firstAttribute="trailing" secondItem="Vfh-Zw-8oD" secondAttribute="trailing" id="f3K-Cl-krS"/>
+                            <constraint firstAttribute="trailing" secondItem="fIy-vw-K1K" secondAttribute="trailing" constant="8" id="oV1-A5-odR"/>
+                        </constraints>
                     </view>
                 </subviews>
             </view>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
-            <point key="canvasLocation" x="137" y="96"/>
+            <constraints>
+                <constraint firstItem="JTK-dL-Dbk" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="-30" id="8pF-O1-xQA"/>
+                <constraint firstAttribute="trailing" secondItem="JTK-dL-Dbk" secondAttribute="trailing" id="Bel-ok-QHE"/>
+                <constraint firstItem="JTK-dL-Dbk" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="g2O-Fe-YJj"/>
+                <constraint firstAttribute="bottom" secondItem="JTK-dL-Dbk" secondAttribute="bottom" id="pGw-9E-QjJ"/>
+            </constraints>
+            <connections>
+                <outlet property="DescripcionCell" destination="fIy-vw-K1K" id="IAJ-7e-PhJ"/>
+                <outlet property="FechaCell" destination="D4r-W0-3Kh" id="uiB-ja-kxZ"/>
+                <outlet property="ImageViewCell" destination="Vfh-Zw-8oD" id="VNM-vr-Lsn"/>
+                <outlet property="RanckCell" destination="6yE-eh-Sfn" id="RLI-go-pAi"/>
+                <outlet property="TituloCell" destination="gem-zE-o74" id="fFf-pe-7gr"/>
+            </connections>
+            <point key="canvasLocation" x="135.87786259541986" y="95.774647887323951"/>
         </collectionViewCell>
     </objects>
     <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
+        <image name="star.fill" catalog="system" width="128" height="116"/>
+        <namedColor name="peliculasLabel">
+            <color red="0.32941176470588235" green="0.70588235294117652" blue="0.20784313725490197" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="peliculasView">
+            <color red="0.1803921568627451" green="0.25490196078431371" blue="0.21568627450980393" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
     </resources>
 </document>

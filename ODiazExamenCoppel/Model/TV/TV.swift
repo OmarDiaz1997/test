@@ -8,9 +8,8 @@
 import Foundation
 
 struct TV: Decodable{
-    var backdrop_path: String
+    //var backdrop_path: String
     var first_air_date: String
-    var genre_ids: [Int]
     var id: Int
     var name: String
     var origin_country: [String]

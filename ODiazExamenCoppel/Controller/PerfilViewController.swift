@@ -32,7 +32,7 @@ class PerfilViewController: UIViewController {
         
         self.FavoritosCollectionView.delegate = self
         self.FavoritosCollectionView.dataSource = self
-        self.FavoritosCollectionView.register(UINib(nibName: "PeliculaCollectionViewCell", bundle: .main), forCellWithReuseIdentifier: "Movie")
+        self.FavoritosCollectionView.register(UINib(nibName: "MovieCollectionViewCell", bundle: .main), forCellWithReuseIdentifier: "MovieCell")
 
     }
     
@@ -54,8 +54,9 @@ class PerfilViewController: UIViewController {
                 }
                 
                 DispatchQueue.main.async {
-                    
-                    self.UserNameTextfield.text = self.perfilModel?.username
+                    var userName = String(self.perfilModel!.username)
+                    userName = "@" + userName
+                    self.UserNameTextfield.text = userName
                 }
 
             }
@@ -94,7 +95,7 @@ extension PerfilViewController: UICollectionViewDelegate, UICollectionViewDataSo
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = FavoritosCollectionView.dequeueReusableCell(withReuseIdentifier: "Movie", for: indexPath) as! PeliculaCollectionViewCell
+        let cell = FavoritosCollectionView.dequeueReusableCell(withReuseIdentifier: "MovieCell", for: indexPath) as! MovieCollectionViewCell
         
         let movie: Movie = moviesModel!.results[indexPath.row]
         
@@ -105,17 +106,17 @@ extension PerfilViewController: UICollectionViewDelegate, UICollectionViewDataSo
                 if let data = try? Data(contentsOf: url)
                 {
                     DispatchQueue.main.async {
-                        cell.MovieImage.image = UIImage(data: data)
-                        cell.MovieImage.layer.cornerRadius = 20
+                        cell.ImageViewCell.image = UIImage(data: data)
+                        cell.ImageViewCell.layer.cornerRadius = 20
                     }
                 }
             }
         }
         
-        cell.TituloLabel.text = movie.original_title!
-        cell.FechaLabel.text = movie.release_date!
-        cell.RankLabel.text = String(movie.vote_average!)
-        cell.DescriptionLabel.text = movie.overview!
+        cell.TituloCell.text = movie.original_title!
+        cell.FechaCell.text = movie.release_date!
+        cell.RanckCell.text = String(movie.vote_average!)
+        cell.DescripcionCell.text = movie.overview!
         cell.layer.cornerRadius = 20
         
         return cell

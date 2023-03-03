@@ -8,6 +8,7 @@
 import UIKit
 
 class PeliculaCollectionViewCell: UICollectionViewCell {
+    
     @IBOutlet weak var MovieImage: UIImageView!
     @IBOutlet weak var TituloLabel: UILabel!
     @IBOutlet weak var FechaLabel: UILabel!

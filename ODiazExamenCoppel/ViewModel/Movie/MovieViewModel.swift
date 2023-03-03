@@ -106,6 +106,7 @@ class MovieViewModel{
         
         let decoder = JSONDecoder()
         let urlSession = URLSession.shared
+        //let urlString = "https://api.themoviedb.org/3/movie/\(id)?api_key=\(apiKey)&language=en-US"
         let urlString = "https://api.themoviedb.org/3/movie/\(id)?api_key=\(apiKey)&language=en-US"
         
         let url = URL(string: urlString.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)!)

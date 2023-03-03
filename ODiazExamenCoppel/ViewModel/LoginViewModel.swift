@@ -34,6 +34,7 @@ class LoginViewModel: ObservableObject{
         request.setValue("application/json", forHTTPHeaderField: "Content-Type")
         
         URLSession.shared.dataTask(with: request){data,response,error in
+            
             if let response = response {
                 print(response)
             }
@@ -99,3 +100,5 @@ class LoginViewModel: ObservableObject{
     
     
 }
+
+

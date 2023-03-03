@@ -11,6 +11,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var UserNameField: UITextField!
     @IBOutlet weak var PasswordField: UITextField!
     @IBOutlet weak var LogInButton: UIButton!
+    @IBOutlet weak var successLabel: UILabel!
     
     
     let api_key = "77a0b23ec14008bf7ff74a56d3d6f040"
@@ -39,7 +40,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         CreateNewRequestToken()
-        
+        self.successLabel.isHidden = false
     
     }
     
@@ -65,6 +66,10 @@ class ViewController: UIViewController {
             if let requestData1 = requestData{
                 self.autorizacionModel = requestData1
                 self.createSessionId(requestToken: String(self.requestModel!.request_token))
+                DispatchQueue.main.async {
+                    self.UserNameField.text = ""
+                    self.PasswordField.text = ""
+                }
                 UserDefaults.standard.set(userName, forKey: "userName")
                 UserDefaults.standard.synchronize()
             }

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Movie" id="xsT-3o-Ghs">
+            <rect key="frame" x="0.0" y="0.0" width="200" height="440"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="86J-VZ-WHs">
+                <rect key="frame" x="0.0" y="0.0" width="200" height="440"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sjv-SN-aqd">
+                        <rect key="frame" x="0.0" y="0.0" width="200" height="440"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rqD-zf-DWz">
+                                <rect key="frame" x="0.0" y="0.0" width="200" height="250"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="250" id="ckZ-iK-eBd"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Titulo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ctP-S8-hkP">
+                                <rect key="frame" x="8" y="258" width="184" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="7qi-az-usO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" name="peliculasLabel"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fecha" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zhn-R8-d4a">
+                                <rect key="frame" x="8" y="326" width="100" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="yih-Ag-CaR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" name="peliculasLabel"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rank" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zb5-cl-PgF">
+                                <rect key="frame" x="151" y="326" width="41" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="41" id="CN8-4F-7j5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" name="peliculasLabel"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pil-gy-oPb">
+                                <rect key="frame" x="102" y="314" width="22" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="star.fill" catalog="system">
+                                    <color key="baseForegroundColor" name="peliculasLabel"/>
+                                </buttonConfiguration>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Descripcion" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jec-9C-pfV">
+                                <rect key="frame" x="8" y="355" width="184" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" name="peliculasView"/>
+                        <constraints>
+                            <constraint firstItem="Zb5-cl-PgF" firstAttribute="top" secondItem="ctP-S8-hkP" secondAttribute="bottom" constant="8" id="ES7-HV-Y0W"/>
+                            <constraint firstAttribute="trailing" secondItem="Zb5-cl-PgF" secondAttribute="trailing" constant="8" id="UkC-q4-396"/>
+                            <constraint firstItem="rqD-zf-DWz" firstAttribute="top" secondItem="sjv-SN-aqd" secondAttribute="top" id="W2r-bw-l1Y"/>
+                            <constraint firstAttribute="trailing" secondItem="rqD-zf-DWz" secondAttribute="trailing" id="WSD-ma-ahk"/>
+                            <constraint firstItem="zhn-R8-d4a" firstAttribute="leading" secondItem="sjv-SN-aqd" secondAttribute="leading" constant="8" id="YXE-xp-uT3"/>
+                            <constraint firstItem="ctP-S8-hkP" firstAttribute="leading" secondItem="sjv-SN-aqd" secondAttribute="leading" constant="8" id="b1u-YZ-FLv"/>
+                            <constraint firstItem="rqD-zf-DWz" firstAttribute="leading" secondItem="sjv-SN-aqd" secondAttribute="leading" id="bii-kN-pU5"/>
+                            <constraint firstItem="zhn-R8-d4a" firstAttribute="top" secondItem="ctP-S8-hkP" secondAttribute="bottom" constant="8" id="dLy-3D-vWd"/>
+                            <constraint firstAttribute="trailing" secondItem="ctP-S8-hkP" secondAttribute="trailing" constant="8" id="nfB-fz-SL0"/>
+                            <constraint firstItem="ctP-S8-hkP" firstAttribute="top" secondItem="rqD-zf-DWz" secondAttribute="bottom" constant="8" id="v8H-Y9-Ts4"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="sjv-SN-aqd" firstAttribute="top" secondItem="86J-VZ-WHs" secondAttribute="top" id="DQ1-NO-g98"/>
+                    <constraint firstAttribute="bottom" secondItem="sjv-SN-aqd" secondAttribute="bottom" id="kdt-l7-1OF"/>
+                    <constraint firstAttribute="trailing" secondItem="sjv-SN-aqd" secondAttribute="trailing" id="mvp-qh-dVE"/>
+                    <constraint firstItem="sjv-SN-aqd" firstAttribute="leading" secondItem="86J-VZ-WHs" secondAttribute="leading" id="tHX-cz-5gO"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <size key="customSize" width="223" height="428"/>
+            <point key="canvasLocation" x="-502.29007633587787" y="117.60563380281691"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="star.fill" catalog="system" width="128" height="116"/>
+        <namedColor name="peliculasLabel">
+            <color red="0.32941176470588235" green="0.70588235294117652" blue="0.20784313725490197" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="peliculasView">
+            <color red="0.1803921568627451" green="0.25490196078431371" blue="0.21568627450980393" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
