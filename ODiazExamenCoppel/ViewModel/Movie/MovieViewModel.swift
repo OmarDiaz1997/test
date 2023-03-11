@@ -106,7 +106,6 @@ class MovieViewModel{
         
         let decoder = JSONDecoder()
         let urlSession = URLSession.shared
-        //let urlString = "https://api.themoviedb.org/3/movie/\(id)?api_key=\(apiKey)&language=en-US"
         let urlString = "https://api.themoviedb.org/3/movie/\(id)?api_key=\(apiKey)&language=en-US"
         
         let url = URL(string: urlString.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)!)
@@ -126,30 +125,89 @@ class MovieViewModel{
     }
     
     
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-
-extension Data{
-    func parseJSON(quitarString palabra: String) -> Data?{
-        let dataAsString = String(data: self, encoding: .utf8)
-        let parseDataString = dataAsString?.replacingOccurrences(of: palabra, with: "")
+    func AddToFavotrite(apiKey : String, idSession : String, id : Int, addToFavorite : @escaping (ResultLogin?, Error?) -> Void){
+        let decoder = JSONDecoder()
+        let urlString = "https://api.themoviedb.org/3/account/{account_id}/favorite?api_key=\(apiKey)&session_id=\(idSession)"
         
-        guard let data = parseDataString?.data(using: .utf8) else{ return nil}
-        return data
+        guard let url = URL(string: urlString.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)!) else { return }
+        
+        let parametros : [String : Any] = ["media_type": "movie",
+                                           "media_id": id,
+                                           "favorite": true]
+        let body = try! JSONSerialization.data(withJSONObject: parametros)
+        var request = URLRequest(url: url)
+        
+        request.httpMethod = "POST"
+        request.httpBody = body
+        request.setValue("application/json", forHTTPHeaderField: "Content-Type")
+        
+        URLSession.shared.dataTask(with: request){data,response,error in
+            if let error = error {
+                addToFavorite(nil, error)
+                
+            } else {
+                guard let getData = data else {
+                    return
+                }
+                
+                let httpResponse = response as! HTTPURLResponse
+                
+                if (200...299).contains(httpResponse.statusCode){
+                    do {
+                        let result = try! JSONDecoder().decode(ResultLogin.self, from: getData)
+                        addToFavorite(result, nil)
+                        print(result)
+                    } catch let error {
+                        print(error.localizedDescription)
+                        addToFavorite(nil, error)
+                    }
+                    
+                }
+            }
+        }.resume()
     }
+    
+    
+    func RemoveFavotrite(apiKey : String, idSession : String, id : Int, removeFavotrite : @escaping (ResultLogin?, Error?) -> Void){
+        let decoder = JSONDecoder()
+        let urlString = "https://api.themoviedb.org/3/account/{account_id}/favorite?api_key=\(apiKey)&session_id=\(idSession)"
+        
+        guard let url = URL(string: urlString.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)!) else { return }
+        
+        let parametros : [String : Any] = ["media_type": "movie",
+                                           "media_id": id,
+                                           "favorite": false]
+        let body = try! JSONSerialization.data(withJSONObject: parametros)
+        var request = URLRequest(url: url)
+        
+        request.httpMethod = "POST"
+        request.httpBody = body
+        request.setValue("application/json", forHTTPHeaderField: "Content-Type")
+        
+        URLSession.shared.dataTask(with: request){data,response,error in
+            if let error = error {
+                removeFavotrite(nil, error)
+                
+            } else {
+                guard let getData = data else {
+                    return
+                }
+                
+                let httpResponse = response as! HTTPURLResponse
+                
+                if (200...299).contains(httpResponse.statusCode){
+                    do {
+                        let result = try! JSONDecoder().decode(ResultLogin.self, from: getData)
+                        removeFavotrite(result, nil)
+                        print(result)
+                    } catch let error {
+                        print(error.localizedDescription)
+                        removeFavotrite(nil, error)
+                    }
+                    
+                }
+            }
+        }.resume()
+    }
+    
 }

@@ -40,8 +40,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         CreateNewRequestToken()
-        self.successLabel.isHidden = false
-    
+        self.successLabel.isHidden = true
     }
     
     
@@ -62,16 +61,23 @@ class ViewController: UIViewController {
         autorizacionViewModel.Login(username: userName,
                                     password: password,
                                     request_token: String(requestModel!.request_token),
-                                    authorized: {requestData, error in
+                                    authorized: {requestData, failed, error in
             if let requestData1 = requestData{
                 self.autorizacionModel = requestData1
                 self.createSessionId(requestToken: String(self.requestModel!.request_token))
                 DispatchQueue.main.async {
                     self.UserNameField.text = ""
                     self.PasswordField.text = ""
+                    self.successLabel.isHidden = true
                 }
                 UserDefaults.standard.set(userName, forKey: "userName")
                 UserDefaults.standard.synchronize()
+            }
+            if let failed1 = failed{
+                DispatchQueue.main.async {
+                    self.successLabel.text = failed1.status_message
+                    self.successLabel.isHidden = false
+                }
             }
             if let error1 = error{
                 print(error1.localizedDescription)
@@ -112,7 +118,7 @@ class ViewController: UIViewController {
         }
         
         guard let Contrasenia = PasswordField.text, Contrasenia != "" else{
-            PasswordField.placeholder = "Ingrese su contraseña"
+            PasswordField.placeholder = "Ingrese su contrasenia"
             return
         }
         

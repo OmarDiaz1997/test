@@ -8,31 +8,33 @@
 import UIKit
 
 class SeccionesViewController: UIViewController {
-    var seccion: Int? = nil
+    //var seccion: Int? = nil
     var idMovie: Int? = nil
     var idTV: Int? = nil
      
     @IBOutlet weak var MoviesCollectionVew: UICollectionView!
     @IBOutlet weak var menuButton: UIButton!
+    @IBOutlet weak var SegmentSelect : UISegmentedControl!
     @IBAction func didChangeSegment(_ sender: UISegmentedControl){
-        if sender.selectedSegmentIndex == 0 {
+        if SegmentSelect.selectedSegmentIndex == 0 {
             print("Segmento popular")
             //seccion = 0
             GetAllPopularMovies()
-        }else if sender.selectedSegmentIndex == 1 {
+        }else if SegmentSelect.selectedSegmentIndex == 1 {
             //seccion = 1
             print("Segmento TopRated")
             GetAllTopRatedMovies()
-        }else if sender.selectedSegmentIndex == 2 {
+        }else if SegmentSelect.selectedSegmentIndex == 2 {
             //seccion = 2
             print("Segmento TVOn")
             GetAllTVOn()
-        }else if sender.selectedSegmentIndex == 3 {
+        }else if SegmentSelect.selectedSegmentIndex == 3 {
             //seccion = 3
             print("Segmento tres")
             GetAllAiringToday()
         }
     }
+     
     
     let apiKey = "77a0b23ec14008bf7ff74a56d3d6f040"
     
@@ -53,19 +55,36 @@ class SeccionesViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationItem.setHidesBackButton(true, animated: true)
         GetAllPopularMovies()
         
         self.MoviesCollectionVew.delegate = self
         self.MoviesCollectionVew.dataSource = self
-        self.MoviesCollectionVew.register(UINib(nibName: "MovieCollectionViewCell", bundle: .main), forCellWithReuseIdentifier: "MovieCell")
+        self.MoviesCollectionVew.register(UINib(nibName: "CeldaCollectionViewCell", bundle: .main), forCellWithReuseIdentifier: "Celda")
 
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        GetAllPopularMovies()
+    }
+    
+    func seccionSegmen(){
+        if SegmentSelect.selectedSegmentIndex == 0 {
+            GetAllPopularMovies()
+        }else if SegmentSelect.selectedSegmentIndex == 1 {
+            GetAllTopRatedMovies()
+        }else if SegmentSelect.selectedSegmentIndex == 2 {
+            GetAllTVOn()
+        }else if SegmentSelect.selectedSegmentIndex == 3 {
+            GetAllAiringToday()
+        }
     }
     
     //MARK: - Get All Popular Movies
     func GetAllPopularMovies(){
         moviesViewModel.GetAllPopular(apiKey: apiKey, token: {requestData, error in
             if let requestData1 = requestData{
-                self.seccion = 0
+                //self.seccion = 0
                 self.moviesModel = requestData1
                 DispatchQueue.main.async {
                     self.MoviesCollectionVew.reloadData()
@@ -82,7 +101,7 @@ class SeccionesViewController: UIViewController {
     func GetAllTopRatedMovies(){
         moviesViewModel.GetTopRated(apiKey: apiKey, token: {requestData, error in
             if let requestData1 = requestData{
-                self.seccion = 1
+                //self.seccion = 1
                 self.moviesModel = requestData1
                 DispatchQueue.main.async {
                     self.MoviesCollectionVew.reloadData()
@@ -99,7 +118,7 @@ class SeccionesViewController: UIViewController {
     func GetAllTVOn(){
         tvsViewModel.GetTVOn(apiKey: apiKey, token: {requestData, error in
             if let requestData1 = requestData{
-                self.seccion = 2
+                //self.seccion = 2
                 self.tvsModel = requestData1
                 DispatchQueue.main.async {
                     self.MoviesCollectionVew.reloadData()
@@ -117,7 +136,7 @@ class SeccionesViewController: UIViewController {
     func GetAllAiringToday(){
         tvsViewModel.GetTVAiringToday(apiKey: apiKey, token: {requestData, error in
             if let requestData1 = requestData{
-                self.seccion = 3
+                //self.seccion = 3
                 self.tvsModel = requestData1
                 DispatchQueue.main.async {
                     self.MoviesCollectionVew.reloadData()
@@ -130,13 +149,8 @@ class SeccionesViewController: UIViewController {
     }
     
     
-    func vaciarMovie(){
-        movieModel
-    }
-    
     
     @IBAction func MenuButtonAction(_ sender: Any) {
-        seccion = nil
         let actionSheet = UIAlertController(title: "Seleccione una opción",
                                   message: "¿Qué desea hacer?",
                                   preferredStyle: .actionSheet)
@@ -145,6 +159,7 @@ class SeccionesViewController: UIViewController {
         actionSheet.addAction(UIAlertAction(title: "Ver perfil",
                                             style: .default, handler: {_ in
             DispatchQueue.main.async {
+                //self.seccion = nil
                 self.performSegue(withIdentifier: "Profile", sender: self)
             }
         }))
@@ -198,20 +213,20 @@ extension SeccionesViewController: UICollectionViewDelegate, UICollectionViewDat
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = MoviesCollectionVew.dequeueReusableCell(withReuseIdentifier: "MovieCell", for: indexPath) as! MovieCollectionViewCell
+        let cell = MoviesCollectionVew.dequeueReusableCell(withReuseIdentifier: "Celda", for: indexPath) as! CeldaCollectionViewCell
         
-        if seccion == 0 || seccion == 1{
+        if SegmentSelect.selectedSegmentIndex == 0 || SegmentSelect.selectedSegmentIndex == 1{
             let movie: Movie = moviesModel!.results[indexPath.row]
             
             /*DispatchQueue.global().async {
-                if let data = try? Data(contentsOf:  URL(string: "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/\(self.moviesModel!.results[indexPath.row].poster_path)")!) {
-                    if let image = UIImage(data: data) {
-                        DispatchQueue.main.async {
-                            cell.MovieImage.image = image
-                        }
-                    }
-                }
-            }*/
+             if let data = try? Data(contentsOf:  URL(string: "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/\(self.moviesModel!.results[indexPath.row].poster_path)")!) {
+             if let image = UIImage(data: data) {
+             DispatchQueue.main.async {
+             cell.MovieImage.image = image
+             }
+             }
+             }
+             }*/
             
             if let url = URL(string: ("https://www.themoviedb.org/t/p/w600_and_h900_bestv2/" + (moviesModel?.results[indexPath.row].poster_path)!))
             {
@@ -219,22 +234,22 @@ extension SeccionesViewController: UICollectionViewDelegate, UICollectionViewDat
                     if let data = try? Data(contentsOf: url)
                     {
                         DispatchQueue.main.async {
-                            cell.ImageViewCell.image = UIImage(data: data)
-                            cell.ImageViewCell.layer.cornerRadius = 20
+                            cell.ImagenCell.image = UIImage(data: data)
+                            cell.ImagenCell.layer.cornerRadius = 20
                         }
                     }
                 }
             }
-                    
+            
             
             cell.TituloCell.text = movie.original_title
             cell.FechaCell.text = movie.release_date!
-            cell.RanckCell.text = String(movie.vote_average!)
-            cell.DescripcionCell.text = movie.overview!
+            cell.RankCell.text = String(movie.vote_average!)
+            cell.DetallesCell.text = movie.overview!
             cell.layer.cornerRadius = 20
             
-           
-        }else if seccion == 2 || seccion == 3{
+            
+        }else if SegmentSelect.selectedSegmentIndex == 2 || SegmentSelect.selectedSegmentIndex == 3 {
             let tv: TV = tvsModel!.results[indexPath.row]
             
             if let url = URL(string: ("https://www.themoviedb.org/t/p/w600_and_h900_bestv2/" + (tvsModel?.results[indexPath.row].poster_path)!))
@@ -243,45 +258,43 @@ extension SeccionesViewController: UICollectionViewDelegate, UICollectionViewDat
                     if let data = try? Data(contentsOf: url)
                     {
                         DispatchQueue.main.async {
-                            cell.ImageViewCell.image = UIImage(data: data)
-                            cell.ImageViewCell.layer.cornerRadius = 20
+                            cell.ImagenCell.image = UIImage(data: data)
+                            cell.ImagenCell.layer.cornerRadius = 20
                         }
                     }
                 }
             }
-                    
+            
             
             cell.TituloCell.text = tv.original_name
             cell.FechaCell.text = tv.first_air_date
-            cell.RanckCell.text = String(tv.vote_average)
-            cell.DescripcionCell.text = tv.overview
+            cell.RankCell.text = String(tv.vote_average)
+            cell.DetallesCell.text = tv.overview
             cell.layer.cornerRadius = 20
         }
-        
-        
-        
         return cell
     }
     
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        if seccion == 0 || seccion == 1{
-        self.idMovie = moviesModel?.results[indexPath.row].id
-        self.performSegue(withIdentifier: "DetallesSegues", sender: self)
-        }else if seccion == 2 || seccion == 3 {
+        if SegmentSelect.selectedSegmentIndex == 0 || SegmentSelect.selectedSegmentIndex == 1 {
+            self.idMovie = moviesModel?.results[indexPath.row].id
+            self.performSegue(withIdentifier: "DetallesSegues", sender: self)
+        }else if SegmentSelect.selectedSegmentIndex == 2 || SegmentSelect.selectedSegmentIndex == 3 {
             self.idTV = tvsModel?.results[indexPath.row].id
             self.performSegue(withIdentifier: "DetallesSegues", sender: self)
         }
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if seccion == 0 || seccion == 1{
-            let id = segue.destination as! DetallesViewController
-            id.idMovie = self.idMovie
-        }else if seccion == 2 || seccion == 3 {
-            let id = segue.destination as! DetallesViewController
-            id.idTV = self.idTV
+        if segue.identifier == "DetallesSegues"{
+            if SegmentSelect.selectedSegmentIndex == 0 || SegmentSelect.selectedSegmentIndex == 1 {
+                let id = segue.destination as! DetallesViewController
+                id.idMovie = self.idMovie
+            }else if SegmentSelect.selectedSegmentIndex == 2 || SegmentSelect.selectedSegmentIndex == 3 {
+                let id = segue.destination as! DetallesViewController
+                id.idTV = self.idTV
+            }
         }
     }
-    
 }

@@ -22,10 +22,12 @@ class LoginViewModel: ObservableObject{
     
 
     
-    func Login(username: String, password: String, request_token: String,authorized : @escaping (AuthorizeRequestToken?, Error?) -> Void){
+    func Login(username: String, password: String, request_token: String, authorized : @escaping (AuthorizeRequestToken?, AuthorizeRequestFailed?, Error?) -> Void){
         let decoder = JSONDecoder()
         guard let url = URL(string: "https://api.themoviedb.org/3/authentication/token/validate_with_login?api_key=\(api_key)") else { return }
-        let parametros = ["username": username, "password": password, "request_token": request_token]
+        let parametros = ["username": username,
+                          "password": password,
+                          "request_token": request_token]
         let body = try! JSONSerialization.data(withJSONObject: parametros)
         var request = URLRequest(url: url)
         
@@ -34,33 +36,37 @@ class LoginViewModel: ObservableObject{
         request.setValue("application/json", forHTTPHeaderField: "Content-Type")
         
         URLSession.shared.dataTask(with: request){data,response,error in
-            
-            if let response = response {
-                print(response)
-            }
-            
-            guard let data = data else {
-                return
-            }
-            
-            self.authorizeRequestToken = try! decoder.decode(AuthorizeRequestToken.self, from: data)
-            authorized(self.authorizeRequestToken, nil)
-            print(self.authorizeRequestToken)
-            
-            /*do{
-                let datos = try JSONDecoder().decode(Result.self, from: data)
-                if !datos.requestToken.isEmpty {
-                    DispatchQueue.main.async {
-                        self.authenticated = 1
+            if let error = error {
+                authorized(nil, nil, error)
+            } else {
+                guard let getData = data else {
+                    return
+                }
+                
+                let httpResponse = response as! HTTPURLResponse
+                
+                if (200...299).contains(httpResponse.statusCode){
+                    do {
+                        let result = try! JSONDecoder().decode(AuthorizeRequestToken.self, from: getData)
+                        authorized(result, nil, nil)
+                        print(result)
+                    } catch let error {
+                        print(error.localizedDescription)
+                        authorized(nil, nil, error)
+                    }
+                    
+                }else if (401...499).contains(httpResponse.statusCode){
+                    do {
+                        let result = try! JSONDecoder().decode(AuthorizeRequestFailed.self, from: getData)
+                        authorized(nil, result, nil)
+                        print(result)
+                    } catch let error {
+                        print(error.localizedDescription)
+                        authorized(nil, nil, error)
                     }
                 }
-            }catch let error as NSError{
-                print("Error al hacer la autenticacion", error.localizedDescription)
-                DispatchQueue.main.async {
-                    self.authenticated = 2
-                }
-            }*/
-            
+                
+            }             
         }.resume()
     }
     

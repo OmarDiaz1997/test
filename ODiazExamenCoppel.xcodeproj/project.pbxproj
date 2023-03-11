@@ -3,16 +3,22 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 55;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4361393C644701A9F21E3194 /* Pods_ODiazExamenCoppel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B963EB087F9F6CF40A053A25 /* Pods_ODiazExamenCoppel.framework */; };
+		563F2E1D1DD9FD51FB9A8332 /* Pods_ODiazExamenCoppel_ODiazExamenCoppelUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67BADD5FC2E02907BF5ABEFA /* Pods_ODiazExamenCoppel_ODiazExamenCoppelUITests.framework */; };
+		DE479DB0BAC2FFE664FEA35A /* Pods_ODiazExamenCoppelTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1036C30968A3B1E6556D2126 /* Pods_ODiazExamenCoppelTests.framework */; };
 		EF3790F6298C620400BA3DE9 /* SessionIdViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3790F5298C620400BA3DE9 /* SessionIdViewModel.swift */; };
 		EF3790F8298C6A0F00BA3DE9 /* SendFavoriteMovies.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3790F7298C6A0F00BA3DE9 /* SendFavoriteMovies.swift */; };
 		EF3790FA298C916B00BA3DE9 /* SeccionesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3790F9298C916B00BA3DE9 /* SeccionesViewController.swift */; };
 		EF6222F1299BF0510019EC9A /* ResultLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6222F0299BF0510019EC9A /* ResultLogin.swift */; };
 		EF79F4DB299D602800A3A586 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF79F4D9299D602800A3A586 /* CollectionViewCell.swift */; };
 		EF79F4DC299D602800A3A586 /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF79F4DA299D602800A3A586 /* CollectionViewCell.xib */; };
+		EF7F66AA29B2C2C500C38429 /* AuthorizeRequestFailed.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7F66A929B2C2C500C38429 /* AuthorizeRequestFailed.swift */; };
+		EF8383AB29B65D170003DED2 /* ProductionCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8383A929B65D170003DED2 /* ProductionCollectionViewCell.swift */; };
+		EF8383AC29B65D170003DED2 /* ProductionCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF8383AA29B65D170003DED2 /* ProductionCollectionViewCell.xib */; };
 		EF91B01829883252001AE3CA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF91B01729883252001AE3CA /* AppDelegate.swift */; };
 		EF91B01A29883252001AE3CA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF91B01929883252001AE3CA /* SceneDelegate.swift */; };
 		EF91B01C29883252001AE3CA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF91B01B29883252001AE3CA /* ViewController.swift */; };
@@ -42,6 +48,8 @@
 		EFC163CB2996A240000F18CA /* TV.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC163CA2996A240000F18CA /* TV.swift */; };
 		EFC163CD2996D1F5000F18CA /* ResultTV.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC163CC2996D1F5000F18CA /* ResultTV.swift */; };
 		EFC163D02996D3A1000F18CA /* TVViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC163CF2996D3A1000F18CA /* TVViewModel.swift */; };
+		EFDF116F29B79C50005CE986 /* CeldaCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFDF116D29B79C50005CE986 /* CeldaCollectionViewCell.swift */; };
+		EFDF117029B79C50005CE986 /* CeldaCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EFDF116E29B79C50005CE986 /* CeldaCollectionViewCell.xib */; };
 		EFEE801C2992D8C30090A048 /* MovieCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFEE801A2992D8C30090A048 /* MovieCollectionViewCell.swift */; };
 		EFEE801D2992D8C30090A048 /* MovieCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EFEE801B2992D8C30090A048 /* MovieCollectionViewCell.xib */; };
 		EFF75E4F299575E300FA94B8 /* DetallesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF75E4E299575E300FA94B8 /* DetallesViewController.swift */; };
@@ -65,12 +73,24 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1036C30968A3B1E6556D2126 /* Pods_ODiazExamenCoppelTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ODiazExamenCoppelTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1360D9DD6C29BDFC50BE51DF /* Pods-ODiazExamenCoppel.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ODiazExamenCoppel.debug.xcconfig"; path = "Target Support Files/Pods-ODiazExamenCoppel/Pods-ODiazExamenCoppel.debug.xcconfig"; sourceTree = "<group>"; };
+		65AC686663F3C57C59788231 /* Pods-ODiazExamenCoppel-ODiazExamenCoppelUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ODiazExamenCoppel-ODiazExamenCoppelUITests.release.xcconfig"; path = "Target Support Files/Pods-ODiazExamenCoppel-ODiazExamenCoppelUITests/Pods-ODiazExamenCoppel-ODiazExamenCoppelUITests.release.xcconfig"; sourceTree = "<group>"; };
+		67BADD5FC2E02907BF5ABEFA /* Pods_ODiazExamenCoppel_ODiazExamenCoppelUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ODiazExamenCoppel_ODiazExamenCoppelUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D3A3C55E62BA71EFF0949D1 /* Pods-ODiazExamenCoppelTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ODiazExamenCoppelTests.release.xcconfig"; path = "Target Support Files/Pods-ODiazExamenCoppelTests/Pods-ODiazExamenCoppelTests.release.xcconfig"; sourceTree = "<group>"; };
+		7284AE5EEA05CE65D4B98FB9 /* Pods-ODiazExamenCoppelTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ODiazExamenCoppelTests.debug.xcconfig"; path = "Target Support Files/Pods-ODiazExamenCoppelTests/Pods-ODiazExamenCoppelTests.debug.xcconfig"; sourceTree = "<group>"; };
+		959FF224FEC6FCE2EDBFE3F4 /* Pods-ODiazExamenCoppel-ODiazExamenCoppelUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ODiazExamenCoppel-ODiazExamenCoppelUITests.debug.xcconfig"; path = "Target Support Files/Pods-ODiazExamenCoppel-ODiazExamenCoppelUITests/Pods-ODiazExamenCoppel-ODiazExamenCoppelUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		B963EB087F9F6CF40A053A25 /* Pods_ODiazExamenCoppel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ODiazExamenCoppel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C393A176865F3393289E4DDB /* Pods-ODiazExamenCoppel.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ODiazExamenCoppel.release.xcconfig"; path = "Target Support Files/Pods-ODiazExamenCoppel/Pods-ODiazExamenCoppel.release.xcconfig"; sourceTree = "<group>"; };
 		EF3790F5298C620400BA3DE9 /* SessionIdViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionIdViewModel.swift; sourceTree = "<group>"; };
 		EF3790F7298C6A0F00BA3DE9 /* SendFavoriteMovies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendFavoriteMovies.swift; sourceTree = "<group>"; };
 		EF3790F9298C916B00BA3DE9 /* SeccionesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeccionesViewController.swift; sourceTree = "<group>"; };
 		EF6222F0299BF0510019EC9A /* ResultLogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultLogin.swift; sourceTree = "<group>"; };
 		EF79F4D9299D602800A3A586 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		EF79F4DA299D602800A3A586 /* CollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
+		EF7F66A929B2C2C500C38429 /* AuthorizeRequestFailed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizeRequestFailed.swift; sourceTree = "<group>"; };
+		EF8383A929B65D170003DED2 /* ProductionCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductionCollectionViewCell.swift; sourceTree = "<group>"; };
+		EF8383AA29B65D170003DED2 /* ProductionCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductionCollectionViewCell.xib; sourceTree = "<group>"; };
 		EF91B01429883252001AE3CA /* ODiazExamenCoppel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ODiazExamenCoppel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF91B01729883252001AE3CA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EF91B01929883252001AE3CA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -104,6 +124,8 @@
 		EFC163CA2996A240000F18CA /* TV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TV.swift; sourceTree = "<group>"; };
 		EFC163CC2996D1F5000F18CA /* ResultTV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultTV.swift; sourceTree = "<group>"; };
 		EFC163CF2996D3A1000F18CA /* TVViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVViewModel.swift; sourceTree = "<group>"; };
+		EFDF116D29B79C50005CE986 /* CeldaCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CeldaCollectionViewCell.swift; sourceTree = "<group>"; };
+		EFDF116E29B79C50005CE986 /* CeldaCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CeldaCollectionViewCell.xib; sourceTree = "<group>"; };
 		EFEE801A2992D8C30090A048 /* MovieCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCollectionViewCell.swift; sourceTree = "<group>"; };
 		EFEE801B2992D8C30090A048 /* MovieCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MovieCollectionViewCell.xib; sourceTree = "<group>"; };
 		EFF75E4E299575E300FA94B8 /* DetallesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetallesViewController.swift; sourceTree = "<group>"; };
@@ -114,6 +136,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4361393C644701A9F21E3194 /* Pods_ODiazExamenCoppel.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -121,6 +144,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE479DB0BAC2FFE664FEA35A /* Pods_ODiazExamenCoppelTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -128,18 +152,51 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				563F2E1D1DD9FD51FB9A8332 /* Pods_ODiazExamenCoppel_ODiazExamenCoppelUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		047A233A25A8AE01B850D668 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B963EB087F9F6CF40A053A25 /* Pods_ODiazExamenCoppel.framework */,
+				67BADD5FC2E02907BF5ABEFA /* Pods_ODiazExamenCoppel_ODiazExamenCoppelUITests.framework */,
+				1036C30968A3B1E6556D2126 /* Pods_ODiazExamenCoppelTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		087CBF480567881D985019F9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1360D9DD6C29BDFC50BE51DF /* Pods-ODiazExamenCoppel.debug.xcconfig */,
+				C393A176865F3393289E4DDB /* Pods-ODiazExamenCoppel.release.xcconfig */,
+				959FF224FEC6FCE2EDBFE3F4 /* Pods-ODiazExamenCoppel-ODiazExamenCoppelUITests.debug.xcconfig */,
+				65AC686663F3C57C59788231 /* Pods-ODiazExamenCoppel-ODiazExamenCoppelUITests.release.xcconfig */,
+				7284AE5EEA05CE65D4B98FB9 /* Pods-ODiazExamenCoppelTests.debug.xcconfig */,
+				6D3A3C55E62BA71EFF0949D1 /* Pods-ODiazExamenCoppelTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		EF6222EF299BF0380019EC9A /* Result */ = {
 			isa = PBXGroup;
 			children = (
 				EF6222F0299BF0510019EC9A /* ResultLogin.swift */,
 			);
 			path = Result;
+			sourceTree = "<group>";
+		};
+		EF8383A829B65CE20003DED2 /* ProductionCompanies */ = {
+			isa = PBXGroup;
+			children = (
+				EF8383A929B65D170003DED2 /* ProductionCollectionViewCell.swift */,
+				EF8383AA29B65D170003DED2 /* ProductionCollectionViewCell.xib */,
+			);
+			path = ProductionCompanies;
 			sourceTree = "<group>";
 		};
 		EF91B00B29883252001AE3CA = {
@@ -149,6 +206,8 @@
 				EF91B02D29883256001AE3CA /* ODiazExamenCoppelTests */,
 				EF91B03729883256001AE3CA /* ODiazExamenCoppelUITests */,
 				EF91B01529883252001AE3CA /* Products */,
+				087CBF480567881D985019F9 /* Pods */,
+				047A233A25A8AE01B850D668 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -165,6 +224,7 @@
 		EF91B01629883252001AE3CA /* ODiazExamenCoppel */ = {
 			isa = PBXGroup;
 			children = (
+				EFC6B69829B69FA4002AF495 /* Celda */,
 				EF91B04A29883284001AE3CA /* View */,
 				EF91B04929883275001AE3CA /* Controller */,
 				EF91B0482988326B001AE3CA /* ViewModel */,
@@ -242,6 +302,7 @@
 		EF91B05129883820001AE3CA /* Movie */ = {
 			isa = PBXGroup;
 			children = (
+				EF8383A829B65CE20003DED2 /* ProductionCompanies */,
 				EFEE801A2992D8C30090A048 /* MovieCollectionViewCell.swift */,
 				EFEE801B2992D8C30090A048 /* MovieCollectionViewCell.xib */,
 				EF79F4D9299D602800A3A586 /* CollectionViewCell.swift */,
@@ -270,6 +331,7 @@
 				EF92E567298B33E30048B7B2 /* Result.swift */,
 				EFB22338299405F200BB550D /* DeleteSession.swift */,
 				EFB2233C2994214100BB550D /* PerfilModel.swift */,
+				EF7F66A929B2C2C500C38429 /* AuthorizeRequestFailed.swift */,
 			);
 			path = MovieDB;
 			sourceTree = "<group>";
@@ -318,6 +380,15 @@
 			path = TV;
 			sourceTree = "<group>";
 		};
+		EFC6B69829B69FA4002AF495 /* Celda */ = {
+			isa = PBXGroup;
+			children = (
+				EFDF116D29B79C50005CE986 /* CeldaCollectionViewCell.swift */,
+				EFDF116E29B79C50005CE986 /* CeldaCollectionViewCell.xib */,
+			);
+			path = Celda;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -325,9 +396,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EF91B03E29883256001AE3CA /* Build configuration list for PBXNativeTarget "ODiazExamenCoppel" */;
 			buildPhases = (
+				6365BFF765CE4ACF8CF690BB /* [CP] Check Pods Manifest.lock */,
 				EF91B01029883252001AE3CA /* Sources */,
 				EF91B01129883252001AE3CA /* Frameworks */,
 				EF91B01229883252001AE3CA /* Resources */,
+				AD8E25D7828815B8B83E2CAB /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -342,6 +415,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EF91B04129883256001AE3CA /* Build configuration list for PBXNativeTarget "ODiazExamenCoppelTests" */;
 			buildPhases = (
+				75DBB365E7D3F74E2DDA8966 /* [CP] Check Pods Manifest.lock */,
 				EF91B02629883256001AE3CA /* Sources */,
 				EF91B02729883256001AE3CA /* Frameworks */,
 				EF91B02829883256001AE3CA /* Resources */,
@@ -360,9 +434,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EF91B04429883256001AE3CA /* Build configuration list for PBXNativeTarget "ODiazExamenCoppelUITests" */;
 			buildPhases = (
+				A550B1C9C52C8A41F06AA4B8 /* [CP] Check Pods Manifest.lock */,
 				EF91B03029883256001AE3CA /* Sources */,
 				EF91B03129883256001AE3CA /* Frameworks */,
 				EF91B03229883256001AE3CA /* Resources */,
+				C98A448644EA6B9E8813B0EE /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -398,7 +474,7 @@
 				};
 			};
 			buildConfigurationList = EF91B00F29883252001AE3CA /* Build configuration list for PBXProject "ODiazExamenCoppel" */;
-			compatibilityVersion = "Xcode 14.0";
+			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -426,7 +502,9 @@
 				EF91B02429883256001AE3CA /* LaunchScreen.storyboard in Resources */,
 				EF79F4DC299D602800A3A586 /* CollectionViewCell.xib in Resources */,
 				EF91B050298837D8001AE3CA /* PeliculaCollectionViewCell.xib in Resources */,
+				EFDF117029B79C50005CE986 /* CeldaCollectionViewCell.xib in Resources */,
 				EF91B02129883256001AE3CA /* Assets.xcassets in Resources */,
+				EF8383AC29B65D170003DED2 /* ProductionCollectionViewCell.xib in Resources */,
 				EF91B01F29883252001AE3CA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -446,6 +524,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6365BFF765CE4ACF8CF690BB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ODiazExamenCoppel-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		75DBB365E7D3F74E2DDA8966 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ODiazExamenCoppelTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A550B1C9C52C8A41F06AA4B8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ODiazExamenCoppel-ODiazExamenCoppelUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AD8E25D7828815B8B83E2CAB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ODiazExamenCoppel/Pods-ODiazExamenCoppel-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ODiazExamenCoppel/Pods-ODiazExamenCoppel-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ODiazExamenCoppel/Pods-ODiazExamenCoppel-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C98A448644EA6B9E8813B0EE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ODiazExamenCoppel-ODiazExamenCoppelUITests/Pods-ODiazExamenCoppel-ODiazExamenCoppelUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ODiazExamenCoppel-ODiazExamenCoppelUITests/Pods-ODiazExamenCoppel-ODiazExamenCoppelUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ODiazExamenCoppel-ODiazExamenCoppelUITests/Pods-ODiazExamenCoppel-ODiazExamenCoppelUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		EF91B01029883252001AE3CA /* Sources */ = {
@@ -468,12 +649,15 @@
 				EF92E56B298B37F60048B7B2 /* Login.swift in Sources */,
 				EF91B05B29887736001AE3CA /* SessionId.swift in Sources */,
 				EFB2233B2994180700BB550D /* PerfilViewController.swift in Sources */,
+				EF7F66AA29B2C2C500C38429 /* AuthorizeRequestFailed.swift in Sources */,
 				EF6222F1299BF0510019EC9A /* ResultLogin.swift in Sources */,
 				EF91B057298873C8001AE3CA /* RequestToken.swift in Sources */,
 				EF79F4DB299D602800A3A586 /* CollectionViewCell.swift in Sources */,
 				EFEE801C2992D8C30090A048 /* MovieCollectionViewCell.swift in Sources */,
 				EF91B05929887560001AE3CA /* AuthorizeRequestToken.swift in Sources */,
+				EF8383AB29B65D170003DED2 /* ProductionCollectionViewCell.swift in Sources */,
 				EF91B05429885971001AE3CA /* CreateSessionWithLogin.swift in Sources */,
+				EFDF116F29B79C50005CE986 /* CeldaCollectionViewCell.swift in Sources */,
 				EFB22341299422C400BB550D /* PerfilViewModel.swift in Sources */,
 				EF91B01829883252001AE3CA /* AppDelegate.swift in Sources */,
 				EFF75E4F299575E300FA94B8 /* DetallesViewController.swift in Sources */,
@@ -652,6 +836,7 @@
 		};
 		EF91B03F29883256001AE3CA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1360D9DD6C29BDFC50BE51DF /* Pods-ODiazExamenCoppel.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -681,6 +866,7 @@
 		};
 		EF91B04029883256001AE3CA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C393A176865F3393289E4DDB /* Pods-ODiazExamenCoppel.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -710,6 +896,7 @@
 		};
 		EF91B04229883256001AE3CA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7284AE5EEA05CE65D4B98FB9 /* Pods-ODiazExamenCoppelTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -730,6 +917,7 @@
 		};
 		EF91B04329883256001AE3CA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6D3A3C55E62BA71EFF0949D1 /* Pods-ODiazExamenCoppelTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -750,6 +938,7 @@
 		};
 		EF91B04529883256001AE3CA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 959FF224FEC6FCE2EDBFE3F4 /* Pods-ODiazExamenCoppel-ODiazExamenCoppelUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -768,6 +957,7 @@
 		};
 		EF91B04629883256001AE3CA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 65AC686663F3C57C59788231 /* Pods-ODiazExamenCoppel-ODiazExamenCoppelUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

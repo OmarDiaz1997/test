@@ -16,6 +16,7 @@ class PerfilViewController: UIViewController {
     let moviesViewModel = MovieViewModel()
     var moviesModel: ResultMovies?
     var movieModel: [Movie?] = []
+    var idMovie : Int? = nil
     let apiKey = "77a0b23ec14008bf7ff74a56d3d6f040"
     
     /* Perfil */
@@ -32,8 +33,15 @@ class PerfilViewController: UIViewController {
         
         self.FavoritosCollectionView.delegate = self
         self.FavoritosCollectionView.dataSource = self
-        self.FavoritosCollectionView.register(UINib(nibName: "MovieCollectionViewCell", bundle: .main), forCellWithReuseIdentifier: "MovieCell")
+        self.FavoritosCollectionView.register(UINib(nibName: "CeldaCollectionViewCell", bundle: .main), forCellWithReuseIdentifier: "Celda")
 
+    }
+    
+    
+    
+    func reloadCollectionView() {
+        GetProfile()
+        GetAllFavorites()
     }
     
     func GetProfile(){
@@ -95,7 +103,7 @@ extension PerfilViewController: UICollectionViewDelegate, UICollectionViewDataSo
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = FavoritosCollectionView.dequeueReusableCell(withReuseIdentifier: "MovieCell", for: indexPath) as! MovieCollectionViewCell
+        let cell = FavoritosCollectionView.dequeueReusableCell(withReuseIdentifier: "Celda", for: indexPath) as! CeldaCollectionViewCell
         
         let movie: Movie = moviesModel!.results[indexPath.row]
         
@@ -106,8 +114,8 @@ extension PerfilViewController: UICollectionViewDelegate, UICollectionViewDataSo
                 if let data = try? Data(contentsOf: url)
                 {
                     DispatchQueue.main.async {
-                        cell.ImageViewCell.image = UIImage(data: data)
-                        cell.ImageViewCell.layer.cornerRadius = 20
+                        cell.ImagenCell.image = UIImage(data: data)
+                        cell.ImagenCell.layer.cornerRadius = 20
                     }
                 }
             }
@@ -115,12 +123,21 @@ extension PerfilViewController: UICollectionViewDelegate, UICollectionViewDataSo
         
         cell.TituloCell.text = movie.original_title!
         cell.FechaCell.text = movie.release_date!
-        cell.RanckCell.text = String(movie.vote_average!)
-        cell.DescripcionCell.text = movie.overview!
+        cell.RankCell.text = String(movie.vote_average!)
+        cell.DetallesCell.text = movie.overview!
         cell.layer.cornerRadius = 20
         
         return cell
     }
     
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        self.idMovie = moviesModel?.results[indexPath.row].id
+        self.performSegue(withIdentifier: "FavoriteSegues", sender: self)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let id = segue.destination as! DetallesViewController
+        id.idMovie = self.idMovie
+    }
     
 }
